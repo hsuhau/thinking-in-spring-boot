@@ -1,0 +1,438 @@
+{
+    "activeProfiles": [],
+    "propertySources": [{
+        "name": "server.ports",
+        "properties": {
+            "local.server.port": {
+                "value": 8080
+            }
+        }
+    }, {
+        "name": "systemProperties",
+        "properties": {
+            "management.endpoints.web.exposure.include": {
+                "value": "*"
+            },
+            "java.specification.version": {
+                "value": "13"
+            },
+            "sun.cpu.isalist": {
+                "value": "amd64"
+            },
+            "sun.jnu.encoding": {
+                "value": "GBK"
+            },
+            "java.class.path": {
+                "value": "C:\\Users\\hsuhau\\IdeaProjects\\first-app-by-gui\\target\\classes;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter-tomcat\\2.0.2.RELEASE\\spring-boot-starter-tomcat-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\javax\\annotation\\javax.annotation-api\\1.3.2\\javax.annotation-api-1.3.2.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-core\\8.5.31\\tomcat-embed-core-8.5.31.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-el\\8.5.31\\tomcat-embed-el-8.5.31.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-websocket\\8.5.31\\tomcat-embed-websocket-8.5.31.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter-webflux\\2.0.2.RELEASE\\spring-boot-starter-webflux-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter\\2.0.2.RELEASE\\spring-boot-starter-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot\\2.0.2.RELEASE\\spring-boot-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-autoconfigure\\2.0.2.RELEASE\\spring-boot-autoconfigure-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter-logging\\2.0.2.RELEASE\\spring-boot-starter-logging-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\ch\\qos\\logback\\logback-classic\\1.2.3\\logback-classic-1.2.3.jar;C:\\Users\\hsuhau\\.m2\\repository\\ch\\qos\\logback\\logback-core\\1.2.3\\logback-core-1.2.3.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-to-slf4j\\2.10.0\\log4j-to-slf4j-2.10.0.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\apache\\logging\\log4j\\log4j-api\\2.10.0\\log4j-api-2.10.0.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\slf4j\\jul-to-slf4j\\1.7.25\\jul-to-slf4j-1.7.25.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\yaml\\snakeyaml\\1.19\\snakeyaml-1.19.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter-json\\2.0.2.RELEASE\\spring-boot-starter-json-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.9.5\\jackson-databind-2.9.5.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.9.0\\jackson-annotations-2.9.0.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.9.5\\jackson-core-2.9.5.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.9.5\\jackson-datatype-jdk8-2.9.5.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.9.5\\jackson-datatype-jsr310-2.9.5.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-parameter-names\\2.9.5\\jackson-module-parameter-names-2.9.5.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter-reactor-netty\\2.0.2.RELEASE\\spring-boot-starter-reactor-netty-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\projectreactor\\ipc\\reactor-netty\\0.7.7.RELEASE\\reactor-netty-0.7.7.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-codec-http\\4.1.24.Final\\netty-codec-http-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-codec\\4.1.24.Final\\netty-codec-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-handler\\4.1.24.Final\\netty-handler-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-buffer\\4.1.24.Final\\netty-buffer-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-transport\\4.1.24.Final\\netty-transport-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-resolver\\4.1.24.Final\\netty-resolver-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-handler-proxy\\4.1.24.Final\\netty-handler-proxy-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-codec-socks\\4.1.24.Final\\netty-codec-socks-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-transport-native-epoll\\4.1.24.Final\\netty-transport-native-epoll-4.1.24.Final-linux-x86_64.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-common\\4.1.24.Final\\netty-common-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\netty\\netty-transport-native-unix-common\\4.1.24.Final\\netty-transport-native-unix-common-4.1.24.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\hibernate\\validator\\hibernate-validator\\6.0.9.Final\\hibernate-validator-6.0.9.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\javax\\validation\\validation-api\\2.0.1.Final\\validation-api-2.0.1.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\jboss\\logging\\jboss-logging\\3.3.2.Final\\jboss-logging-3.3.2.Final.jar;C:\\Users\\hsuhau\\.m2\\repository\\com\\fasterxml\\classmate\\1.3.4\\classmate-1.3.4.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-web\\5.0.6.RELEASE\\spring-web-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-beans\\5.0.6.RELEASE\\spring-beans-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-webflux\\5.0.6.RELEASE\\spring-webflux-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\projectreactor\\reactor-core\\3.1.7.RELEASE\\reactor-core-3.1.7.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\synchronoss\\cloud\\nio-multipart-parser\\1.1.0\\nio-multipart-parser-1.1.0.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\synchronoss\\cloud\\nio-stream-storage\\1.1.3\\nio-stream-storage-1.1.3.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-core\\5.0.6.RELEASE\\spring-core-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-jcl\\5.0.6.RELEASE\\spring-jcl-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-loader\\2.0.2.RELEASE\\spring-boot-loader-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-starter-actuator\\2.0.2.RELEASE\\spring-boot-starter-actuator-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-actuator-autoconfigure\\2.0.2.RELEASE\\spring-boot-actuator-autoconfigure-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\boot\\spring-boot-actuator\\2.0.2.RELEASE\\spring-boot-actuator-2.0.2.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-context\\5.0.6.RELEASE\\spring-context-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-aop\\5.0.6.RELEASE\\spring-aop-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\springframework\\spring-expression\\5.0.6.RELEASE\\spring-expression-5.0.6.RELEASE.jar;C:\\Users\\hsuhau\\.m2\\repository\\io\\micrometer\\micrometer-core\\1.0.4\\micrometer-core-1.0.4.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\hdrhistogram\\HdrHistogram\\2.1.10\\HdrHistogram-2.1.10.jar;C:\\Users\\hsuhau\\.m2\\repository\\org\\latencyutils\\LatencyUtils\\2.0.3\\LatencyUtils-2.0.3.jar;C:\\Program Files\\JetBrains\\IntelliJ IDEA\\lib\\idea_rt.jar"
+            },
+            "java.vm.vendor": {
+                "value": "Oracle Corporation"
+            },
+            "sun.arch.data.model": {
+                "value": "64"
+            },
+            "user.variant": {
+                "value": ""
+            },
+            "java.vendor.url": {
+                "value": "https://openjdk.java.net/"
+            },
+            "catalina.useNaming": {
+                "value": "false"
+            },
+            "user.timezone": {
+                "value": "Asia/Shanghai"
+            },
+            "java.vm.specification.version": {
+                "value": "13"
+            },
+            "os.name": {
+                "value": "Windows 10"
+            },
+            "sun.java.launcher": {
+                "value": "SUN_STANDARD"
+            },
+            "user.country": {
+                "value": "CN"
+            },
+            "sun.boot.library.path": {
+                "value": "C:\\Program Files\\RedHat\\java-13-openjdk-13.0.2-1\\bin"
+            },
+            "spring.application.admin.enabled": {
+                "value": "true"
+            },
+            "sun.java.command": {
+                "value": "******"
+            },
+            "com.sun.management.jmxremote": {
+                "value": ""
+            },
+            "jdk.debug": {
+                "value": "release"
+            },
+            "spring.liveBeansView.mbeanDomain": {
+                "value": ""
+            },
+            "sun.cpu.endian": {
+                "value": "little"
+            },
+            "user.home": {
+                "value": "C:\\Users\\hsuhau"
+            },
+            "user.language": {
+                "value": "zh"
+            },
+            "java.specification.vendor": {
+                "value": "Oracle Corporation"
+            },
+            "java.version.date": {
+                "value": "2020-01-14"
+            },
+            "java.home": {
+                "value": "C:\\Program Files\\RedHat\\java-13-openjdk-13.0.2-1"
+            },
+            "spring.output.ansi.enabled": {
+                "value": "always"
+            },
+            "file.separator": {
+                "value": "\\"
+            },
+            "java.vm.compressedOopsMode": {
+                "value": "Zero based"
+            },
+            "line.separator": {
+                "value": "\r\n"
+            },
+            "java.vm.specification.vendor": {
+                "value": "Oracle Corporation"
+            },
+            "java.specification.name": {
+                "value": "Java Platform API Specification"
+            },
+            "intellij.debug.agent": {
+                "value": "true"
+            },
+            "java.awt.headless": {
+                "value": "true"
+            },
+            "user.script": {
+                "value": ""
+            },
+            "sun.management.compiler": {
+                "value": "HotSpot 64-Bit Tiered Compilers"
+            },
+            "java.runtime.version": {
+                "value": "13.0.2+8"
+            },
+            "user.name": {
+                "value": "hsuhau"
+            },
+            "spring.jmx.enabled": {
+                "value": "true"
+            },
+            "path.separator": {
+                "value": ";"
+            },
+            "os.version": {
+                "value": "10.0"
+            },
+            "java.runtime.name": {
+                "value": "OpenJDK Runtime Environment"
+            },
+            "file.encoding": {
+                "value": "UTF-8"
+            },
+            "spring.beaninfo.ignore": {
+                "value": "true"
+            },
+            "java.vm.name": {
+                "value": "OpenJDK 64-Bit Server VM"
+            },
+            "java.vendor.version": {
+                "value": "19.9"
+            },
+            "java.vendor.url.bug": {
+                "value": "https://bugreport.java.com/bugreport/"
+            },
+            "java.io.tmpdir": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Local\\Temp\\"
+            },
+            "catalina.home": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Local\\Temp\\tomcat.16938964713850935081.8080"
+            },
+            "java.version": {
+                "value": "13.0.2"
+            },
+            "jboss.modules.system.pkgs": {
+                "value": "com.intellij.rt"
+            },
+            "user.dir": {
+                "value": "C:\\Users\\hsuhau\\IdeaProjects\\first-app-by-gui"
+            },
+            "os.arch": {
+                "value": "amd64"
+            },
+            "java.vm.specification.name": {
+                "value": "Java Virtual Machine Specification"
+            },
+            "PID": {
+                "value": "14400"
+            },
+            "sun.os.patch.level": {
+                "value": ""
+            },
+            "catalina.base": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Local\\Temp\\tomcat.16938964713850935081.8080"
+            },
+            "java.library.path": {
+                "value": "C:\\Program Files\\RedHat\\java-13-openjdk-13.0.2-1\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\Program Files\\Python38\\Scripts\\;C:\\Program Files\\Python38\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\RedHat\\java-13-openjdk-13.0.2-1\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2019.5.0\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Programs\\Anaconda3;C:\\Programs\\Anaconda3\\Scripts;C:\\Programs\\Anaconda3\\Library\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Polyspace\\R2020a\\runtime\\win64;C:\\Program Files\\Polyspace\\R2020a\\bin;C:\\Program Files\\Polyspace\\R2020a\\polyspace\\bin;C:\\Go\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA\\plugins\\maven\\lib\\maven3\\bin;C:\\Users\\hsuhau\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition\\bin;C:\\Program Files\\Mercurial\\;C:\\Program Files\\JetBrains\\IntelliJ IDEA\\bin;C:\\Program Files\\JetBrains\\CLion\\bin;C:\\Program Files\\JetBrains\\PyCharm\\bin;C:\\Programs\\Fiddler;C:\\Program Files\\JetBrains\\WebStorm\\bin;;C:\\Users\\hsuhau\\AppData\\Roaming\\npm;C:\\Users\\hsuhau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\hsuhau\\go\\bin;."
+            },
+            "java.vm.info": {
+                "value": "mixed mode, sharing"
+            },
+            "java.vendor": {
+                "value": "N/A"
+            },
+            "java.vm.version": {
+                "value": "13.0.2+8"
+            },
+            "java.rmi.server.randomIDs": {
+                "value": "true"
+            },
+            "sun.io.unicode.encoding": {
+                "value": "UnicodeLittle"
+            },
+            "java.class.version": {
+                "value": "57.0"
+            }
+        }
+    }, {
+        "name": "systemEnvironment",
+        "properties": {
+            "USERDOMAIN_ROAMINGPROFILE": {
+                "value": "DESKTOP-DTJEIT8",
+                "origin": "System Environment Property \"USERDOMAIN_ROAMINGPROFILE\""
+            },
+            "PROCESSOR_LEVEL": {
+                "value": "6",
+                "origin": "System Environment Property \"PROCESSOR_LEVEL\""
+            },
+            "SESSIONNAME": {
+                "value": "Console",
+                "origin": "System Environment Property \"SESSIONNAME\""
+            },
+            "ALLUSERSPROFILE": {
+                "value": "C:\\ProgramData",
+                "origin": "System Environment Property \"ALLUSERSPROFILE\""
+            },
+            "PROCESSOR_ARCHITECTURE": {
+                "value": "AMD64",
+                "origin": "System Environment Property \"PROCESSOR_ARCHITECTURE\""
+            },
+            "__COMPAT_LAYER": {
+                "value": "DetectorsShimLog",
+                "origin": "System Environment Property \"__COMPAT_LAYER\""
+            },
+            "PSModulePath": {
+                "value": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+                "origin": "System Environment Property \"PSModulePath\""
+            },
+            "SystemDrive": {
+                "value": "C:",
+                "origin": "System Environment Property \"SystemDrive\""
+            },
+            "MAVEN_HOME": {
+                "value": "C:\\Program Files\\JetBrains\\IntelliJ IDEA\\plugins\\maven\\lib\\maven3",
+                "origin": "System Environment Property \"MAVEN_HOME\""
+            },
+            "USERNAME": {
+                "value": "hsuhau",
+                "origin": "System Environment Property \"USERNAME\""
+            },
+            "ProgramFiles(x86)": {
+                "value": "C:\\Program Files (x86)",
+                "origin": "System Environment Property \"ProgramFiles(x86)\""
+            },
+            "FPS_BROWSER_USER_PROFILE_STRING": {
+                "value": "Default",
+                "origin": "System Environment Property \"FPS_BROWSER_USER_PROFILE_STRING\""
+            },
+            "PATHEXT": {
+                "value": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+                "origin": "System Environment Property \"PATHEXT\""
+            },
+            "DriverData": {
+                "value": "C:\\Windows\\System32\\Drivers\\DriverData",
+                "origin": "System Environment Property \"DriverData\""
+            },
+            "IntelliJ IDEA Community Edition": {
+                "value": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition\\bin;",
+                "origin": "System Environment Property \"IntelliJ IDEA Community Edition\""
+            },
+            "CLion": {
+                "value": "C:\\Program Files\\JetBrains\\CLion\\bin;",
+                "origin": "System Environment Property \"CLion\""
+            },
+            "GOPATH": {
+                "value": "C:\\Users\\hsuhau\\go",
+                "origin": "System Environment Property \"GOPATH\""
+            },
+            "ProgramData": {
+                "value": "C:\\ProgramData",
+                "origin": "System Environment Property \"ProgramData\""
+            },
+            "ProgramW6432": {
+                "value": "C:\\Program Files",
+                "origin": "System Environment Property \"ProgramW6432\""
+            },
+            "HOMEPATH": {
+                "value": "\\Users\\hsuhau",
+                "origin": "System Environment Property \"HOMEPATH\""
+            },
+            "PROCESSOR_IDENTIFIER": {
+                "value": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+                "origin": "System Environment Property \"PROCESSOR_IDENTIFIER\""
+            },
+            "ProgramFiles": {
+                "value": "C:\\Program Files",
+                "origin": "System Environment Property \"ProgramFiles\""
+            },
+            "PUBLIC": {
+                "value": "C:\\Users\\Public",
+                "origin": "System Environment Property \"PUBLIC\""
+            },
+            "windir": {
+                "value": "C:\\WINDOWS",
+                "origin": "System Environment Property \"windir\""
+            },
+            "=::": {
+                "value": "::\\",
+                "origin": "System Environment Property \"=::\""
+            },
+            "OneDriveCommercial": {
+                "value": "D:\\OneDrive - NewCloud",
+                "origin": "System Environment Property \"OneDriveCommercial\""
+            },
+            "LOCALAPPDATA": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Local",
+                "origin": "System Environment Property \"LOCALAPPDATA\""
+            },
+            "ChocolateyLastPathUpdate": {
+                "value": "132328240459938959",
+                "origin": "System Environment Property \"ChocolateyLastPathUpdate\""
+            },
+            "IntelliJ IDEA": {
+                "value": "C:\\Program Files\\JetBrains\\IntelliJ IDEA\\bin;",
+                "origin": "System Environment Property \"IntelliJ IDEA\""
+            },
+            "USERDOMAIN": {
+                "value": "DESKTOP-DTJEIT8",
+                "origin": "System Environment Property \"USERDOMAIN\""
+            },
+            "FPS_BROWSER_APP_PROFILE_STRING": {
+                "value": "Internet Explorer",
+                "origin": "System Environment Property \"FPS_BROWSER_APP_PROFILE_STRING\""
+            },
+            "LOGONSERVER": {
+                "value": "\\\\DESKTOP-DTJEIT8",
+                "origin": "System Environment Property \"LOGONSERVER\""
+            },
+            "WebStorm": {
+                "value": "C:\\Program Files\\JetBrains\\WebStorm\\bin;",
+                "origin": "System Environment Property \"WebStorm\""
+            },
+            "MAVEN_OPTS": {
+                "value": "-Xms256m -Xmx512m -Dfile.encoding=UTF-8",
+                "origin": "System Environment Property \"MAVEN_OPTS\""
+            },
+            "OneDrive": {
+                "value": "D:\\OneDrive - NewCloud",
+                "origin": "System Environment Property \"OneDrive\""
+            },
+            "APPDATA": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Roaming",
+                "origin": "System Environment Property \"APPDATA\""
+            },
+            "ChocolateyInstall": {
+                "value": "C:\\ProgramData\\chocolatey",
+                "origin": "System Environment Property \"ChocolateyInstall\""
+            },
+            "NVTOOLSEXT_PATH": {
+                "value": "C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\",
+                "origin": "System Environment Property \"NVTOOLSEXT_PATH\""
+            },
+            "CommonProgramFiles": {
+                "value": "C:\\Program Files\\Common Files",
+                "origin": "System Environment Property \"CommonProgramFiles\""
+            },
+            "Path": {
+                "value": "C:\\Program Files\\Python38\\Scripts\\;C:\\Program Files\\Python38\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\RedHat\\java-13-openjdk-13.0.2-1\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2019.5.0\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Programs\\Anaconda3;C:\\Programs\\Anaconda3\\Scripts;C:\\Programs\\Anaconda3\\Library\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Polyspace\\R2020a\\runtime\\win64;C:\\Program Files\\Polyspace\\R2020a\\bin;C:\\Program Files\\Polyspace\\R2020a\\polyspace\\bin;C:\\Go\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA\\plugins\\maven\\lib\\maven3\\bin;C:\\Users\\hsuhau\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition\\bin;C:\\Program Files\\Mercurial\\;C:\\Program Files\\JetBrains\\IntelliJ IDEA\\bin;C:\\Program Files\\JetBrains\\CLion\\bin;C:\\Program Files\\JetBrains\\PyCharm\\bin;C:\\Programs\\Fiddler;C:\\Program Files\\JetBrains\\WebStorm\\bin;;C:\\Users\\hsuhau\\AppData\\Roaming\\npm;C:\\Users\\hsuhau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\hsuhau\\go\\bin",
+                "origin": "System Environment Property \"Path\""
+            },
+            "PyCharm": {
+                "value": "C:\\Program Files\\JetBrains\\PyCharm\\bin;",
+                "origin": "System Environment Property \"PyCharm\""
+            },
+            "OS": {
+                "value": "Windows_NT",
+                "origin": "System Environment Property \"OS\""
+            },
+            "COMPUTERNAME": {
+                "value": "DESKTOP-DTJEIT8",
+                "origin": "System Environment Property \"COMPUTERNAME\""
+            },
+            "NVCUDASAMPLES_ROOT": {
+                "value": "C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v10.2",
+                "origin": "System Environment Property \"NVCUDASAMPLES_ROOT\""
+            },
+            "CUDA_PATH": {
+                "value": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.2",
+                "origin": "System Environment Property \"CUDA_PATH\""
+            },
+            "PROCESSOR_REVISION": {
+                "value": "9e0a",
+                "origin": "System Environment Property \"PROCESSOR_REVISION\""
+            },
+            "CommonProgramW6432": {
+                "value": "C:\\Program Files\\Common Files",
+                "origin": "System Environment Property \"CommonProgramW6432\""
+            },
+            "ComSpec": {
+                "value": "C:\\WINDOWS\\system32\\cmd.exe",
+                "origin": "System Environment Property \"ComSpec\""
+            },
+            "SystemRoot": {
+                "value": "C:\\WINDOWS",
+                "origin": "System Environment Property \"SystemRoot\""
+            },
+            "TEMP": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Local\\Temp",
+                "origin": "System Environment Property \"TEMP\""
+            },
+            "HOMEDRIVE": {
+                "value": "C:",
+                "origin": "System Environment Property \"HOMEDRIVE\""
+            },
+            "USERPROFILE": {
+                "value": "C:\\Users\\hsuhau",
+                "origin": "System Environment Property \"USERPROFILE\""
+            },
+            "TMP": {
+                "value": "C:\\Users\\hsuhau\\AppData\\Local\\Temp",
+                "origin": "System Environment Property \"TMP\""
+            },
+            "CommonProgramFiles(x86)": {
+                "value": "C:\\Program Files (x86)\\Common Files",
+                "origin": "System Environment Property \"CommonProgramFiles(x86)\""
+            },
+            "NUMBER_OF_PROCESSORS": {
+                "value": "6",
+                "origin": "System Environment Property \"NUMBER_OF_PROCESSORS\""
+            },
+            "IDEA_INITIAL_DIRECTORY": {
+                "value": "C:\\Program Files\\JetBrains\\IntelliJ IDEA\\bin",
+                "origin": "System Environment Property \"IDEA_INITIAL_DIRECTORY\""
+            }
+        }
+    }]
+}
