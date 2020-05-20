@@ -13,6 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+<<<<<<< HEAD
+=======
+import java.net.*;
+import java.io.*;
+import java.nio.channels.*;
+>>>>>>> c93ef24f542e969e89ac6ccdec95c07d1885ff90
 import java.util.Properties;
 
 public class MavenWrapperDownloader {
