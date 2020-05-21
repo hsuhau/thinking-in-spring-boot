@@ -6,6 +6,7 @@ import org.springframework.boot.web.context.WebServerInitializedEvent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
+import org.springframework.stereotype.Indexed;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
@@ -23,6 +24,7 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
  * 更深层次的讨论请参考
  */
 //@EnableAutoConfiguration
+@Indexed
 @Configuration
 public class WebConfiguration {
     @Bean

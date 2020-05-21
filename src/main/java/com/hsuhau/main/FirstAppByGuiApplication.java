@@ -1,4 +1,4 @@
-package com.hsuhau.firstappbygui;
+package com.hsuhau.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

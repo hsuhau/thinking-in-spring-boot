@@ -5,11 +5,11 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.2.RELEASE</version>
+        <version>2.3.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <!--为springboot项目导入依赖-->
     <!--    <parent>-->
-    <!--        &lt;!&ndash;            为springboot项目导入依赖&ndash;&gt;-->
     <!--        <groupId>org.springframework.boot</groupId>-->
     <!--        <artifactId>spring-boot-dependencies</artifactId>-->
     <!--        <version>2.0.2.RELEASE</version>-->
@@ -73,20 +73,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <version>2.0.2.RELEASE</version>
         </dependency>
 
         <!--        webflux依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
-            <version>2.0.2.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.0.2.RELEASE</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -100,7 +97,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-loader</artifactId>
-            <version>2.0.2.RELEASE</version>
             <scope>provided</scope>
         </dependency>
 
@@ -110,34 +106,14 @@
         </dependency>
 
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>junit-jupiter-api</artifactId>
-                    <groupId>org.junit.jupiter</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>junit-platform-commons</artifactId>
-                    <groupId>org.junit.platform</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>opentest4j</artifactId>
-                    <groupId>org.opentest4j</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>apiguardian-api</artifactId>
-                    <groupId>org.apiguardian</groupId>
-                </exclusion>
-            </exclusions>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-indexer</artifactId>
+            <optional>true</optional>
         </dependency>
+
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.1</version>
-            <scope>test</scope>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
         </dependency>
     </dependencies>
 
@@ -146,7 +122,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.0.2.RELEASE</version>
                 <executions>
                     <execution>
                         <goals>
@@ -163,7 +138,7 @@
                 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.2.3</version>
             </plugin>
 
         </plugins>
